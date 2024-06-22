@@ -10,7 +10,7 @@ import { ProductCreateInput } from "@/models/product";
 
 const URL = "https://shop.silpo.ua/offers";
 
-dotenv.config();
+              dotenv.config();
 
 const app: Express = express();
 
