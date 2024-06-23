@@ -6,9 +6,7 @@
     "tsc": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register ./src/server.ts",
     "prod": "tsc && node ./dist/server.js",
-    "prettier": "npx prettier . --write",
-    "prepare": "husky && husky install",
-    "postinstall": "chmod +x .husky/*"
+    "prettier": "npx prettier . --write"
   },
   "lint-staged": {
     "*.{js,ts,json}": [
