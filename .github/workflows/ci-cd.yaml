@@ -22,5 +22,6 @@ jobs:
         with:
          image: sunkiller/scraper-backend
          registry: docker.io
+         tags: sunkiller/scraper-backend:latest
          username: ${{ secrets.DOCKER_USERNAME }}
          password: ${{ secrets.DOCKER_PASSWORD }}
