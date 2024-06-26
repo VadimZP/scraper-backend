@@ -91,7 +91,7 @@ app.listen(8000, () => {
 
     const cluster = await Cluster.launch({
       concurrency: Cluster.CONCURRENCY_PAGE,
-      maxConcurrency: 6,
+      maxConcurrency: 1,
       timeout: 1200000,
       monitor: true,
       puppeteerOptions: {
