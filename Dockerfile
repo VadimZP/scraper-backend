@@ -41,4 +41,4 @@ RUN npx prisma generate
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 
-CMD [ "npm", "run", "dev" ]
+CMD ["sh", "-c", "npx prisma migrate deploy && npm run dev"]
