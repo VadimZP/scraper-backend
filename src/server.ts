@@ -148,6 +148,8 @@ app.listen(8000, () => {
               ...productsListItems,
             ];
 
+            console.log(allProducts);
+
             const isPaginationMoreButtonDisable = await page.$(
               ".pagination-arrow:not(.pagination-arrow--left).pagination-arrow--disabled",
             );
