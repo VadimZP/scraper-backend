@@ -1,6 +1,6 @@
 node_modules
 .env
 .git
+npm-debug.log
 .gitignore
-*.md
 !README.md

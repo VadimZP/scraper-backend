@@ -32,6 +32,10 @@ app.use((error: any, _req: Request, res: Response, _next: NextFunction) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.json({ message: "hello", statusCode: 200 });
+});
+
 app.listen(8000, () => {
   console.log(`App is listening on port ${process.env.SERVER_PORT}`);
 
