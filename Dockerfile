@@ -26,7 +26,7 @@ WORKDIR /home/pptruser
 
 COPY --chown=pptruser:pptruser package.json package-lock.json ./
 
-RUN npm install
+RUN npm ci && npm cache clean --force
 
 COPY --chown=pptruser:pptruser prisma ./prisma/
 
